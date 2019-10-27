@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+{% block body %}
+{% load static %}
+    <div>
+        <h2>Contractor Estimate Submission</h2><br>
+        <h5 style="padding:0px 0px 0px 0px;">Apply for a Estimate</h5><br>
+    </div>
+    <div>
+        <form action="{% url 'contractor-estimate' %}" method="post">
+            {% csrf_token %}
+            {{ contractor_estimate_form.as_p }}
+            <input type="submit" value="Apply">
+        </form>
+    </div>
+{% endblock %}

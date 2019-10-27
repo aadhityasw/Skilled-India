@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+{% block body %}
+{% load static %}
+    <div>
+        <h2>New Project</h2><br>
+        <h5 style="padding:0px 0px 0px 0px;">Apply for a Job</h5><br>
+    </div>
+    <div>
+        <form action="{% url 'add-proj' %}" method="post">
+            {% csrf_token %}
+            {{ add_proj_form.as_p }}
+            <input type="submit" value="Apply">
+        </form>
+    </div>
+{% endblock %}

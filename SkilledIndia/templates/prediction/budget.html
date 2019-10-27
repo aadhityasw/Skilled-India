@@ -1,0 +1,41 @@
+{% extends 'base.html' %} 
+{% block body %}
+{% load static %}
+    <div>
+        <h2>Budget prediction</h2><br>
+        <h5 style="padding:0px 0px 0px 0px;">To know the budget of your project</h5><br>
+    </div>
+    <div>
+        <p class="container" style="color:#c70d3a;">
+            Fill the following details<br><br>
+        </p>
+    </div>
+    <form action="{% url 'budget-predict' %}">
+        <table align="center" cellpadding="10px">
+            <tr>
+                <td><label><h5>Sector</h5></label></td>
+                <td>
+                    <select id="Sector type" name="sector">
+                        <option value="0">Rural</option>
+                        <option value="1">Urban</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label><h5>Time of completion</h5></label>&nbsp&nbsp</td>
+                <td><input type="number" name="duration" placeholder="Time in years"></td>
+            </tr>
+            <tr>
+                <td><label><h5>Skilled workers required</h5></label>&nbsp&nbsp</td>
+                <td><input type="number" name="skilled_workers" placeholder="Number of skilled workers"></td>
+            </tr>
+            <tr>
+                <td><label><h5>Unskilled workers required</h5></label>&nbsp&nbsp</td>
+                <td><input type="number" name="unskilled_workers" placeholder="Number of Unskilled workers"></td>
+            </tr>
+        </table>
+        <div style=" text-align:center;padding: 10px 50px;">
+            <input style="background-color: #1089ff;" type="submit" class="button1" value="Predict">
+        </div>
+    </form>
+{% endblock %}

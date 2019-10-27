@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block body %}
+{% load static %}
+    <div>
+        <h2>Employee List</h2><br>
+    </div>
+    <div>
+        <ul>
+            {% for employee in employees %}
+                <li><a href='./{{ employee.id }}'>{{ employee }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

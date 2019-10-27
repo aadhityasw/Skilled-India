@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% block body %}
+{% load static %}
+    <div>
+        <h2>Project details</h2><br>
+        <h5 style="padding:0px 0px 0px 0px;">To know the details of project</h5><br>
+    </div>
+    <div>
+        <table style="border: 1px solid black">
+            <tr><td>Name :</td><td>{{ project.name }}</td></tr>
+            <tr><td>Budget :</td><td>{{ project.budget }}</td></tr>
+            <tr><td>Duration :</td><td>{{ project.duration }}</td></tr>
+            <tr><td>Location :</td><td>{{ project.location }}</td></tr>
+            <tr><td>Skilled Workforce Count :</td><td>{{ project.skilled_workforce_count }}</td></tr>
+            <tr><td>Unskilled Workforce Count :</td><td>{{ project.unskilled_workforce_count }}</td></tr>
+            <tr><td>Skilled Workforce Salary :</td><td>{{ project.skilled_workforce_sal }}</td></tr>
+            <tr><td>Skilled Workforce Salary :</td><td>{{ project.unskilled_workforce_sal }}</td></tr>
+            <tr><td>Skilled Workforce Age :</td><td>{{ project.skilled_workforce_age }}</td></tr>
+            <tr><td>Skilled Workforce Age :</td><td>{{ project.unskilled_workforce_age }}</td></tr>
+        </table>
+    </div>
+{% endblock %}

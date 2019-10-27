@@ -1,0 +1,20 @@
+{% extends 'base.html' %} 
+{% block body %}
+{% load static %}
+    <div>
+        <h2>Job Portal</h2><br>
+        <h5 style="padding:0px 0px 0px 0px;">Apply for a Job</h5><br>
+    </div>
+    <div>
+        <p class="container" style="color:#c70d3a;">
+            Age limit for Non Skilled workers is 60 years and Skilled workers above 22 years<br><br>
+        </p>
+    </div>
+    <div>
+        <form action="{% url 'emp_application' %}" method="post">
+            {% csrf_token %}
+            {{ emp_form.as_p }}
+            <input type="submit" value="Apply">
+        </form>
+    </div>
+{% endblock %}

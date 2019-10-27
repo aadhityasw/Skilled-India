@@ -1,0 +1,133 @@
+h2 {
+    color: "red";
+    text-align: center;
+}
+
+body {
+    margin: none;
+    text-align: center;
+}
+
+.h22 {
+    font-family: 'Squada One';
+}
+
+.head {
+    background-color: #5edfff;
+    padding: 1px 1px 1px 1px;
+    line-height: 0px;
+    font-family: 'Rubik';
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+}
+
+.subhead {
+    position: relative;
+    left: 850px;
+}
+
+hr {
+    border-style: dotted;
+    border-bottom: none;
+    width: 70%;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.img1 {
+    height: 200px;
+}
+
+.about {
+    float: right;
+    height: 300px;
+    width: 600px;
+}
+
+P {
+    font-size: 17px;
+    font-family: 'Chivo';
+}
+
+.middle {
+    background-color: #eaf6f6;
+    padding: 10px 0px 20px 0px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 3%;
+}
+
+.container-fluid {
+    padding: 1% 5%
+}
+
+.pd {
+    text-align: center;
+}
+
+.job {
+    text-align: center;
+}
+
+.projpic {
+    height: 80px;
+}
+
+.jobpic {
+    height: 80px;
+}
+
+.contract {
+    text-align: center;
+}
+
+.button1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.contractimg {
+    height: 80px;
+}
+
+.bottom-container {
+    text-align: center;
+    line-height: 10px;
+    background-color: #66BFBF;
+    padding: 50px 0px 20px 0px;
+}
+
+.footer-link {
+    margin: 10px 20px;
+}

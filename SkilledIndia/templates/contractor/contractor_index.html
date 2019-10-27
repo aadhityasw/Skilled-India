@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block body %}
+{% load static %}
+    <div>
+        <h2>Contractor List</h2><br>
+    </div>
+    <div>
+        <ul>
+            {% for contractor in contractors %}
+                <li><a href='./{{ contractor.id }}'>{{ contractor }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block body %}
+{% load static %}
+    <div>
+        <h2>Contractor Details</h2><br>
+    </div>
+    <div>
+        <table style="border: 1px solid black">
+            <tr><td>Name :</td><td>{{ contractor.name }}</td></tr>
+            <tr><td>Budget Proposed :</td><td>{{ contractor.budget }}</td></tr>
+            <tr><td>Project :</td><td>{{ contractor.project }}</td></tr>
+        </table>
+    </div>
+{% endblock %}

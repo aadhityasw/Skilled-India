@@ -1,0 +1,241 @@
+<html xmlns:a="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Skill India
+    </title>
+    <link rel="icon" href="favicon 1.ico">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Chivo|Rubik|Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+<!--<div class="head">
+    <h1 class="title">Skill India</h1>
+    <h2 class="subhead">-Every Indian Will Work</h2>
+</div>-->
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <h1 class="navbar-brand" style="color:white;">Skill India</h1>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="" style="color:white;">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="" style="color:white;">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="" style="color:white;">Login</a>
+        </li>
+    </ul>
+</nav>
+<div class="middle">
+<h2 class="h22" style="color:#382039; font-size:30px; font-family:'Acme';">About Site</h2>
+    <div style="font-family:'Chivo';" class="container-fluid">
+<p>
+    <img class="about" src="https://www.softwaresuggest.com/blog/wp-content/uploads/2019/05/Building-Efficiency-Field-Service-Software-for-Construction-Industry-ss-blog.png">
+    We don't have a centralized system which contains all the information about how
+    the money invested by the Government of India is being utilized and the progress
+of each of those projects. So we are unable to find how much money is used and
+wasted in the government projects. The delay in finishing those projects or the
+wastage of money can be due to the unavailability of a common portal for the
+employees and the employer to search for the jobs available at that point of time
+for a particular project. So the employees end up in unemployment despite
+possessing the skills required for the job.</p>
+    <p>
+        Just by asking a query people
+are able to know how much money is used and how much it is wasted. They can
+know where they can get jobs in different sites of construction field. If the user is
+willing to know how many workers are required? The system needs to determine
+the no of workers for the required years based on pre determined budget.
+    </p>
+    </div>
+    <hr>
+
+    <br>
+    <h2 style="color:#382039; font-size:30px; font-family:'Acme';">Predictors</h2>
+    <section id="features">
+    <div class="row">
+        <div class="feature-box col-lg-4">
+            <i class="fas fa-rupee-sign fa-4x"></i>
+            <p>Facing problem with predicting the budget of your project ?<br> <a href=""><input type="button" class="button" value="Budget predictor"></a></p>
+        </div>
+        <div class="feature-box col-lg-4">
+            <i class="far fa-clock fa-4x"></i>
+            <p>Facing problem with predicting the completing time of your project ?<br> <a href=""><input type="button" class="button" value="Time predictor"></a></p>
+        </div>
+        <div class="feature-box col-lg-4">
+            <i class="fas fa-users fa-4x"></i>
+            <p>Facing problem with predicting the workforce for your project? <br><a href=""><input type="button" class="button" value="Workforce predictor"></a></p>
+        </div>
+    </div>
+    </section>
+    <hr><br>
+    <div class="pd"><img class="projpic" src="https://image.flaticon.com/icons/svg/1087/1087902.svg"><br><br>
+        <h2>Project details</h2><br>
+        <p>Want to know about any completed or ongoing government project details?</p><a href=""><input type="button" class="button" value="Projects"></a></p>
+    </div>
+    <hr><br>
+    <div class="job">
+        <img src="https://image.flaticon.com/icons/svg/942/942799.svg" class="jobpic"><br><br>
+        <h2>Job Portal</h2>
+        <p>Want to apply for vacant jobs in various fields of construction sites ?</p>
+        <p>Apply HERE !!</p></p><a href=""><a href="" ><input type="button" class="button" value="Job portal"></a></p>
+    </div>
+    <hr><br>
+    <div class="contract"><img class="contractimg" src="https://image.flaticon.com/icons/svg/1283/1283342.svg"><br><br>
+        <h2>Contracts</h2><br>
+        <p>Proposing budget for various contracts and hire skilled and non skilled employees</p>
+        <a href=""><input type="button" class="button1" value="Login"></a></p>
+    </div>
+</div>
+<div class="bottom-container">
+  <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+  <a class="footer-link" href="https://twitter.com/">Twitter</a>
+  <a class="footer-link" href="https://www.facebook.com/">Facebook</a><br><br>
+  <p class="new">© 2019 Skill India</p>
+</div>
+</body>   
+
+
+
+
+
+
+
+
+
+
+
+
+style:
+
+
+h2{
+color:"red";
+text-align:center;
+}
+body{
+margin:none;
+//text-align:center;
+}
+.h22
+{
+font-family:'Squada One';
+}
+.head
+{
+background-color:#5edfff;
+padding:1px 1px 1px 1px;
+line-height:0px;
+font-family: 'Rubik';
+}
+.title
+{
+position:relative;
+text-align:center;
+font-size:60px;
+}
+.subhead{
+position:relative;
+left:850px;
+}
+hr
+{
+border-style:dotted;
+border-bottom:none;
+width:70%;
+}
+.navbar-brand
+{
+font-size:25px;
+}
+.img1{
+height:200px;
+}
+.about{
+float:right;
+height:300px;
+width:600px;
+}
+P{
+font-size:17px;
+font-family:'Chivo';
+}
+.middle
+{
+background-color:#eaf6f6;
+padding:10px 0px 20px 0px;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 10px;
+  cursor: pointer;
+  border-radius:30px;
+}
+.feature-box
+{
+text-align:center;
+padding:3%;
+}
+.container-fluid
+{
+padding:1% 5%
+}
+.pd
+{
+text-align:center;
+}
+.job
+{
+text-align:center;
+}
+.projpic
+{
+height:80px;
+}
+.jobpic
+{
+height:80px;
+}
+.contract
+{
+text-align:center;
+}
+.button1 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 10px;
+  cursor: pointer;
+  border-radius:30px;
+}
+.contractimg
+{
+height:80px;
+}
+.bottom-container
+{
+text-align:center;
+line-height:10px;
+background-color:#66BFBF;
+padding:50px 0px 20px 0px;
+}
+.footer-link
+{
+margin:10px 20px;
+}
+
+
