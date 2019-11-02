@@ -10,7 +10,8 @@
             Fill the following details<br><br>
         </p>
     </div>
-    <form action="{% url 'budget-predict' %}">
+    <form method="POST" action="{% url 'budget-predict' %}">
+        {% csrf_token %}
         <table align="center" cellpadding="10px">
             <tr>
                 <td><label><h5>Sector</h5></label></td>
@@ -38,4 +39,52 @@
             <input style="background-color: #1089ff;" type="submit" class="button1" value="Predict">
         </div>
     </form>
+
+    
+    {% if result_render == True %}
+        <div>
+            <table align="center">
+                <tr>
+                    <td>
+                    Sector :
+                    </td>
+                    <td>
+                        {{ sector_data }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Time :
+                    </td>
+                    <td>
+                        {{ duration_data }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Skilled Workforce :
+                    </td>
+                    <td>
+                        {{ skworkforce_data  }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Unskilled Workforce :
+                    </td>
+                    <td>
+                        {{ uskworkforce_data  }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Budget :
+                    </td>
+                    <td>
+                        {{ budget_data }}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    {% endif %}
 {% endblock %}

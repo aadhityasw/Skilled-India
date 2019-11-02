@@ -8,11 +8,11 @@ def Prediction_List(request) :
     return HttpResponse("A list of all the predictions that can be made.")
 
 def Prediction_Time(request) :
-    if request.method == 'GET' :
-        sector_data = request.GET['sector']
-        budget_data = request.GET['budget']
-        skworkforce_data = request.GET['skilled_workers']
-        uskworkforce_data = request.GET['unskilled_workers']
+    if request.method == 'POST' :
+        sector_data = request.POST['sector']
+        budget_data = request.POST['budget']
+        skworkforce_data = request.POST['skilled_workers']
+        uskworkforce_data = request.POST['unskilled_workers']
         duration = PredictionConfig.duration_predictor.predict([[sector_data, budget_data, skworkforce_data, uskworkforce_data]])[0]
         context = {
             'result_render' : True,
@@ -25,13 +25,14 @@ def Prediction_Time(request) :
         print('Duration : ', duration)
         return render(request, 'prediction/time.html', context)
     else :
+        print('HiHi')
         return render(request, 'prediction/time.html', {'result_render' : False})
 
 def Prediction_Workforce(request) :
-    if request.method == 'GET' :
-        budget_data = request.GET['budget']
-        sector_data = request.GET['sector']
-        duration_data = request.GET['duration']
+    if request.method == 'POST' :
+        budget_data = request.POST['budget']
+        sector_data = request.POST['sector']
+        duration_data = request.POST['duration']
         skworkforce = PredictionConfig.skilled_workforce_predictor.predict([[sector_data, budget_data, duration_data]])[0]
         uskworkforce = PredictionConfig.unskilled_workforce_predictor.predict([[sector_data, budget_data, duration_data]])[0]
         context = {
@@ -49,11 +50,11 @@ def Prediction_Workforce(request) :
         return render(request, 'prediction/workforce.html') 
 
 def Prediction_Budget(request) :
-    if request.method == 'GET' :
-        duration_data = request.GET['duration']
-        sector_data = request.GET['sector']
-        skworkforce_data = request.GET['skilled_workers']
-        uskworkforce_data = request.GET['unskilled_workers']
+    if request.method == 'POST' :
+        duration_data = request.POST['duration']
+        sector_data = request.POST['sector']
+        skworkforce_data = request.POST['skilled_workers']
+        uskworkforce_data = request.POST['unskilled_workers']
         budget = PredictionConfig.budget_predictor.predict([[sector_data, skworkforce_data, uskworkforce_data, duration_data]])[0]
         context = {
             'result_render' : True,
