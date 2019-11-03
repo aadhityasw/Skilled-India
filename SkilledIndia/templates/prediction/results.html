@@ -1,48 +1,45 @@
-{% block showresults %}
-    {% if result_render == True %}
-    <div>
-        <table align="center">
-            <tr>
-                <td>
-                Sector :
-                </td>
-                <td>
-                    {{ sector_data }}
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Time :
-                </td>
-                <td>
-                    {{ duration_data }}
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Skilled Workforce :
-                </td>
-                <td>
-                    {{ skworkforce_data  }}
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Unskilled Workforce :
-                </td>
-                <td>
-                    {{ uskworkforce_data  }}
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Budget :
-                </td>
-                <td>
-                    {{ budget_data }}
-                </td>
-            </tr>
-        </table>
-    </div>
-    {% endif %}
-{% endblock %}
+
+<div>
+    <table align="center">
+        <tr>
+            <td>
+            Sector :
+            </td>
+            <td>
+                {{ sector_data }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Time :
+            </td>
+            <td>
+                {{ duration_data }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Skilled Workforce :
+            </td>
+            <td>
+                {{ skworkforce_data  }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Unskilled Workforce :
+            </td>
+            <td>
+                {{ uskworkforce_data  }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Budget :
+            </td>
+            <td>
+                {{ budget_data }}
+            </td>
+        </tr>
+    </table>
+</div>
